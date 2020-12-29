@@ -29,10 +29,7 @@ extension QYHomeController{
     //自定义导航栏
     private func setNavgationBar(){
         //设置左侧item
-        let leftButton = UIButton()
-        leftButton.setImage(UIImage(named: "nav_left_logo"), for: .normal)
-        leftButton.sizeToFit()
-        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: leftButton)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(imageName: "nav_left_logo")
         
         //设置右侧item
         //方法一 拓展 UIBarButtonItem 构造函数 系统推荐
