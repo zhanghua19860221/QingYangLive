@@ -11,6 +11,8 @@
 		1459D481259AD35600E4FDC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1459D480259AD35600E4FDC0 /* Assets.xcassets */; };
 		1459D48F259AD35700E4FDC0 /* QingYangLiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459D48E259AD35700E4FDC0 /* QingYangLiveTests.swift */; };
 		1459D49A259AD35700E4FDC0 /* QingYangLiveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459D499259AD35700E4FDC0 /* QingYangLiveUITests.swift */; };
+		1459D4E5259B09C800E4FDC0 /* QYBaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459D4E4259B09C800E4FDC0 /* QYBaseNavigationViewController.swift */; };
+		1459D4EA259B0A0100E4FDC0 /* QYBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459D4E9259B0A0100E4FDC0 /* QYBaseTabBarController.swift */; };
 		62FCCEB7B5C689AE676FAB20 /* libPods-QingYangLive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B2CD08BD101B9F7C884C66 /* libPods-QingYangLive.a */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +45,8 @@
 		1459D495259AD35700E4FDC0 /* QingYangLiveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QingYangLiveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1459D499259AD35700E4FDC0 /* QingYangLiveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QingYangLiveUITests.swift; sourceTree = "<group>"; };
 		1459D49B259AD35700E4FDC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1459D4E4259B09C800E4FDC0 /* QYBaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYBaseNavigationViewController.swift; sourceTree = "<group>"; };
+		1459D4E9259B0A0100E4FDC0 /* QYBaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYBaseTabBarController.swift; sourceTree = "<group>"; };
 		417F89D96CA320D1A25900CD /* Pods-QingYangLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QingYangLive.release.xcconfig"; path = "Target Support Files/Pods-QingYangLive/Pods-QingYangLive.release.xcconfig"; sourceTree = "<group>"; };
 		F1B2CD08BD101B9F7C884C66 /* libPods-QingYangLive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QingYangLive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -99,9 +103,10 @@
 			isa = PBXGroup;
 			children = (
 				1459D4B4259AD42F00E4FDC0 /* AppDelegate */,
-				1459D4B3259AD42C00E4FDC0 /* Class */,
+				1459D4B3259AD42C00E4FDC0 /* Classes */,
 				1459D4B2259AD42900E4FDC0 /* Mian */,
 				1459D4B1259AD42700E4FDC0 /* Utilkits */,
+				1459D4DB259B074800E4FDC0 /* DevTools */,
 				1459D4B0259AD42400E4FDC0 /* Resourse */,
 			);
 			path = QingYangLive;
@@ -144,15 +149,22 @@
 		1459D4B2259AD42900E4FDC0 /* Mian */ = {
 			isa = PBXGroup;
 			children = (
+				1459D4CD259AE08600E4FDC0 /* C */,
+				1459D4CC259AE08300E4FDC0 /* M */,
+				1459D4CB259AE08100E4FDC0 /* V */,
 			);
 			path = Mian;
 			sourceTree = "<group>";
 		};
-		1459D4B3259AD42C00E4FDC0 /* Class */ = {
+		1459D4B3259AD42C00E4FDC0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1459D4DA259B069A00E4FDC0 /* Home */,
+				1459D4D9259B069700E4FDC0 /* Live */,
+				1459D4D8259B069400E4FDC0 /* Follow */,
+				1459D4D7259B069200E4FDC0 /* Personal */,
 			);
-			path = Class;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		1459D4B4259AD42F00E4FDC0 /* AppDelegate */ = {
@@ -161,6 +173,80 @@
 				1459D477259AD35400E4FDC0 /* AppDelegate.swift */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		1459D4CB259AE08100E4FDC0 /* V */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		1459D4CC259AE08300E4FDC0 /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		1459D4CD259AE08600E4FDC0 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				1459D4E4259B09C800E4FDC0 /* QYBaseNavigationViewController.swift */,
+				1459D4E9259B0A0100E4FDC0 /* QYBaseTabBarController.swift */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		1459D4D7259B069200E4FDC0 /* Personal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Personal;
+			sourceTree = "<group>";
+		};
+		1459D4D8259B069400E4FDC0 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		1459D4D9259B069700E4FDC0 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		1459D4DA259B069A00E4FDC0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1459D4DB259B074800E4FDC0 /* DevTools */ = {
+			isa = PBXGroup;
+			children = (
+				1459D4DD259B077F00E4FDC0 /* Extension */,
+				1459D4DC259B077A00E4FDC0 /* New Group */,
+			);
+			path = DevTools;
+			sourceTree = "<group>";
+		};
+		1459D4DC259B077A00E4FDC0 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		1459D4DD259B077F00E4FDC0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		216CC9428E23B1146BADECB0 /* Frameworks */ = {
@@ -243,6 +329,7 @@
 		1459D46C259AD35400E4FDC0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = QY;
 				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
@@ -334,7 +421,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1459D4EA259B0A0100E4FDC0 /* QYBaseTabBarController.swift in Sources */,
 				1459D478259AD35400E4FDC0 /* AppDelegate.swift in Sources */,
+				1459D4E5259B09C800E4FDC0 /* QYBaseNavigationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +581,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74MN977R89;
 				INFOPLIST_FILE = QingYangLive/Resourse/Info.plist;
@@ -513,6 +603,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74MN977R89;
 				INFOPLIST_FILE = QingYangLive/Resourse/Info.plist;
