@@ -13,6 +13,16 @@
 		1459D49A259AD35700E4FDC0 /* QingYangLiveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459D499259AD35700E4FDC0 /* QingYangLiveUITests.swift */; };
 		1459D4E5259B09C800E4FDC0 /* QYBaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459D4E4259B09C800E4FDC0 /* QYBaseNavigationViewController.swift */; };
 		1459D4EA259B0A0100E4FDC0 /* QYBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459D4E9259B0A0100E4FDC0 /* QYBaseTabBarController.swift */; };
+		1459D502259B0CDF00E4FDC0 /* QYBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459D501259B0CDF00E4FDC0 /* QYBaseViewController.swift */; };
+		1459D50A259B0D1E00E4FDC0 /* QYHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459D509259B0D1E00E4FDC0 /* QYHomeController.swift */; };
+		1459D50F259B0D3200E4FDC0 /* QYLiveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459D50E259B0D3200E4FDC0 /* QYLiveController.swift */; };
+		1459D514259B0D4300E4FDC0 /* QYFollowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459D513259B0D4200E4FDC0 /* QYFollowController.swift */; };
+		1459D519259B0D5600E4FDC0 /* QYPersonalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459D518259B0D5600E4FDC0 /* QYPersonalController.swift */; };
+		1459D52F259B18EA00E4FDC0 /* GlobalConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459D52E259B18EA00E4FDC0 /* GlobalConst.swift */; };
+		1459D537259B1C8900E4FDC0 /* EXT_UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459D536259B1C8900E4FDC0 /* EXT_UIColor.swift */; };
+		1459D53C259B1E2500E4FDC0 /* KeyConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459D53B259B1E2500E4FDC0 /* KeyConst.swift */; };
+		1459D541259B1E4600E4FDC0 /* UrlConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459D540259B1E4600E4FDC0 /* UrlConst.swift */; };
+		1459D554259B491B00E4FDC0 /* EXT_UIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459D553259B491B00E4FDC0 /* EXT_UIBarButtonItem.swift */; };
 		62FCCEB7B5C689AE676FAB20 /* libPods-QingYangLive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B2CD08BD101B9F7C884C66 /* libPods-QingYangLive.a */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +57,16 @@
 		1459D49B259AD35700E4FDC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1459D4E4259B09C800E4FDC0 /* QYBaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYBaseNavigationViewController.swift; sourceTree = "<group>"; };
 		1459D4E9259B0A0100E4FDC0 /* QYBaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYBaseTabBarController.swift; sourceTree = "<group>"; };
+		1459D501259B0CDF00E4FDC0 /* QYBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYBaseViewController.swift; sourceTree = "<group>"; };
+		1459D509259B0D1E00E4FDC0 /* QYHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYHomeController.swift; sourceTree = "<group>"; };
+		1459D50E259B0D3200E4FDC0 /* QYLiveController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYLiveController.swift; sourceTree = "<group>"; };
+		1459D513259B0D4200E4FDC0 /* QYFollowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYFollowController.swift; sourceTree = "<group>"; };
+		1459D518259B0D5600E4FDC0 /* QYPersonalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYPersonalController.swift; sourceTree = "<group>"; };
+		1459D52E259B18EA00E4FDC0 /* GlobalConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConst.swift; sourceTree = "<group>"; };
+		1459D536259B1C8900E4FDC0 /* EXT_UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXT_UIColor.swift; sourceTree = "<group>"; };
+		1459D53B259B1E2500E4FDC0 /* KeyConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyConst.swift; sourceTree = "<group>"; };
+		1459D540259B1E4600E4FDC0 /* UrlConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlConst.swift; sourceTree = "<group>"; };
+		1459D553259B491B00E4FDC0 /* EXT_UIBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXT_UIBarButtonItem.swift; sourceTree = "<group>"; };
 		417F89D96CA320D1A25900CD /* Pods-QingYangLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QingYangLive.release.xcconfig"; path = "Target Support Files/Pods-QingYangLive/Pods-QingYangLive.release.xcconfig"; sourceTree = "<group>"; };
 		F1B2CD08BD101B9F7C884C66 /* libPods-QingYangLive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QingYangLive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -142,6 +162,9 @@
 		1459D4B1259AD42700E4FDC0 /* Utilkits */ = {
 			isa = PBXGroup;
 			children = (
+				1459D540259B1E4600E4FDC0 /* UrlConst.swift */,
+				1459D53B259B1E2500E4FDC0 /* KeyConst.swift */,
+				1459D52E259B18EA00E4FDC0 /* GlobalConst.swift */,
 			);
 			path = Utilkits;
 			sourceTree = "<group>";
@@ -159,6 +182,7 @@
 		1459D4B3259AD42C00E4FDC0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1459D51D259B0E8B00E4FDC0 /* Login */,
 				1459D4DA259B069A00E4FDC0 /* Home */,
 				1459D4D9259B069700E4FDC0 /* Live */,
 				1459D4D8259B069400E4FDC0 /* Follow */,
@@ -192,8 +216,9 @@
 		1459D4CD259AE08600E4FDC0 /* C */ = {
 			isa = PBXGroup;
 			children = (
-				1459D4E4259B09C800E4FDC0 /* QYBaseNavigationViewController.swift */,
+				1459D501259B0CDF00E4FDC0 /* QYBaseViewController.swift */,
 				1459D4E9259B0A0100E4FDC0 /* QYBaseTabBarController.swift */,
+				1459D4E4259B09C800E4FDC0 /* QYBaseNavigationViewController.swift */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -201,6 +226,10 @@
 		1459D4D7259B069200E4FDC0 /* Personal */ = {
 			isa = PBXGroup;
 			children = (
+				1459D500259B0C8200E4FDC0 /* M */,
+				1459D4FF259B0C8000E4FDC0 /* V */,
+				1459D4FE259B0C7E00E4FDC0 /* C */,
+				1459D4FD259B0C7C00E4FDC0 /* VM */,
 			);
 			path = Personal;
 			sourceTree = "<group>";
@@ -208,6 +237,10 @@
 		1459D4D8259B069400E4FDC0 /* Follow */ = {
 			isa = PBXGroup;
 			children = (
+				1459D4FC259B0C7900E4FDC0 /* M */,
+				1459D4FB259B0C7600E4FDC0 /* V */,
+				1459D4FA259B0C7500E4FDC0 /* C */,
+				1459D4F9259B0C7200E4FDC0 /* VM */,
 			);
 			path = Follow;
 			sourceTree = "<group>";
@@ -215,6 +248,10 @@
 		1459D4D9259B069700E4FDC0 /* Live */ = {
 			isa = PBXGroup;
 			children = (
+				1459D4F8259B0C3A00E4FDC0 /* M */,
+				1459D4F7259B0C3800E4FDC0 /* V */,
+				1459D4F6259B0C3600E4FDC0 /* C */,
+				1459D4F4259B0C2700E4FDC0 /* VM */,
 			);
 			path = Live;
 			sourceTree = "<group>";
@@ -222,6 +259,10 @@
 		1459D4DA259B069A00E4FDC0 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				1459D4F5259B0C3300E4FDC0 /* M */,
+				1459D4F3259B0C2300E4FDC0 /* V */,
+				1459D4F2259B0C2100E4FDC0 /* C */,
+				1459D4F1259B0C1E00E4FDC0 /* VM */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -245,8 +286,133 @@
 		1459D4DD259B077F00E4FDC0 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				1459D536259B1C8900E4FDC0 /* EXT_UIColor.swift */,
+				1459D553259B491B00E4FDC0 /* EXT_UIBarButtonItem.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		1459D4F1259B0C1E00E4FDC0 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		1459D4F2259B0C2100E4FDC0 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				1459D509259B0D1E00E4FDC0 /* QYHomeController.swift */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		1459D4F3259B0C2300E4FDC0 /* V */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		1459D4F4259B0C2700E4FDC0 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		1459D4F5259B0C3300E4FDC0 /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		1459D4F6259B0C3600E4FDC0 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				1459D50E259B0D3200E4FDC0 /* QYLiveController.swift */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		1459D4F7259B0C3800E4FDC0 /* V */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		1459D4F8259B0C3A00E4FDC0 /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		1459D4F9259B0C7200E4FDC0 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		1459D4FA259B0C7500E4FDC0 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				1459D513259B0D4200E4FDC0 /* QYFollowController.swift */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		1459D4FB259B0C7600E4FDC0 /* V */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		1459D4FC259B0C7900E4FDC0 /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		1459D4FD259B0C7C00E4FDC0 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		1459D4FE259B0C7E00E4FDC0 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				1459D518259B0D5600E4FDC0 /* QYPersonalController.swift */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		1459D4FF259B0C8000E4FDC0 /* V */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		1459D500259B0C8200E4FDC0 /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		1459D51D259B0E8B00E4FDC0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		216CC9428E23B1146BADECB0 /* Frameworks */ = {
@@ -421,9 +587,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1459D52F259B18EA00E4FDC0 /* GlobalConst.swift in Sources */,
+				1459D537259B1C8900E4FDC0 /* EXT_UIColor.swift in Sources */,
+				1459D50A259B0D1E00E4FDC0 /* QYHomeController.swift in Sources */,
 				1459D4EA259B0A0100E4FDC0 /* QYBaseTabBarController.swift in Sources */,
+				1459D554259B491B00E4FDC0 /* EXT_UIBarButtonItem.swift in Sources */,
+				1459D502259B0CDF00E4FDC0 /* QYBaseViewController.swift in Sources */,
 				1459D478259AD35400E4FDC0 /* AppDelegate.swift in Sources */,
+				1459D53C259B1E2500E4FDC0 /* KeyConst.swift in Sources */,
 				1459D4E5259B09C800E4FDC0 /* QYBaseNavigationViewController.swift in Sources */,
+				1459D50F259B0D3200E4FDC0 /* QYLiveController.swift in Sources */,
+				1459D514259B0D4300E4FDC0 /* QYFollowController.swift in Sources */,
+				1459D519259B0D5600E4FDC0 /* QYPersonalController.swift in Sources */,
+				1459D541259B1E4600E4FDC0 /* UrlConst.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
