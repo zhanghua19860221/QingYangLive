@@ -11,6 +11,7 @@
 		1459D481259AD35600E4FDC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1459D480259AD35600E4FDC0 /* Assets.xcassets */; };
 		1459D48F259AD35700E4FDC0 /* QingYangLiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459D48E259AD35700E4FDC0 /* QingYangLiveTests.swift */; };
 		1459D49A259AD35700E4FDC0 /* QingYangLiveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459D499259AD35700E4FDC0 /* QingYangLiveUITests.swift */; };
+		62FCCEB7B5C689AE676FAB20 /* libPods-QingYangLive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B2CD08BD101B9F7C884C66 /* libPods-QingYangLive.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0EF5F0616FFB7A6F59F4EA19 /* Pods-QingYangLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QingYangLive.debug.xcconfig"; path = "Target Support Files/Pods-QingYangLive/Pods-QingYangLive.debug.xcconfig"; sourceTree = "<group>"; };
 		1459D474259AD35400E4FDC0 /* QingYangLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QingYangLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1459D477259AD35400E4FDC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1459D480259AD35600E4FDC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,6 +43,8 @@
 		1459D495259AD35700E4FDC0 /* QingYangLiveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QingYangLiveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1459D499259AD35700E4FDC0 /* QingYangLiveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QingYangLiveUITests.swift; sourceTree = "<group>"; };
 		1459D49B259AD35700E4FDC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		417F89D96CA320D1A25900CD /* Pods-QingYangLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QingYangLive.release.xcconfig"; path = "Target Support Files/Pods-QingYangLive/Pods-QingYangLive.release.xcconfig"; sourceTree = "<group>"; };
+		F1B2CD08BD101B9F7C884C66 /* libPods-QingYangLive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QingYangLive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62FCCEB7B5C689AE676FAB20 /* libPods-QingYangLive.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +80,8 @@
 				1459D48D259AD35700E4FDC0 /* QingYangLiveTests */,
 				1459D498259AD35700E4FDC0 /* QingYangLiveUITests */,
 				1459D475259AD35400E4FDC0 /* Products */,
+				5B7CF4DF77C63845926BBF49 /* Pods */,
+				216CC9428E23B1146BADECB0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,6 +163,23 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
+		216CC9428E23B1146BADECB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1B2CD08BD101B9F7C884C66 /* libPods-QingYangLive.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B7CF4DF77C63845926BBF49 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0EF5F0616FFB7A6F59F4EA19 /* Pods-QingYangLive.debug.xcconfig */,
+				417F89D96CA320D1A25900CD /* Pods-QingYangLive.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -163,6 +187,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1459D49E259AD35700E4FDC0 /* Build configuration list for PBXNativeTarget "QingYangLive" */;
 			buildPhases = (
+				3A08391EA881D67BB2DFB39D /* [CP] Check Pods Manifest.lock */,
 				1459D470259AD35400E4FDC0 /* Sources */,
 				1459D471259AD35400E4FDC0 /* Frameworks */,
 				1459D472259AD35400E4FDC0 /* Resources */,
@@ -278,6 +303,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A08391EA881D67BB2DFB39D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QingYangLive-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1459D470259AD35400E4FDC0 /* Sources */ = {
@@ -438,12 +488,14 @@
 		};
 		1459D49F259AD35700E4FDC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EF5F0616FFB7A6F59F4EA19 /* Pods-QingYangLive.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74MN977R89;
 				INFOPLIST_FILE = QingYangLive/Resourse/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,12 +509,14 @@
 		};
 		1459D4A0259AD35700E4FDC0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 417F89D96CA320D1A25900CD /* Pods-QingYangLive.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74MN977R89;
 				INFOPLIST_FILE = QingYangLive/Resourse/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
