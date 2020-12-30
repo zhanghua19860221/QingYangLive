@@ -6,17 +6,33 @@
 //
 
 import UIKit
-
+private let kTitleViewH:CGFloat = 45
 class QYHomeController: QYBaseViewController {
+    //MARK: - 懒加载属性
+    fileprivate lazy var controllers:[UIViewController] = {
+        return[QYRecommendationController(),QYGameController(),QYEntertainmentController(),QYFunController()]
+    }()
 
+    fileprivate lazy var pageTitleView:PageTitleView = {
+        let titles = ["推荐","游戏","娱乐","趣玩"]
+        let titleFrame = CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: kScreenWidth, height: kTitleViewH))
+        let titleView = PageTitleView(frame: titleFrame, titles: titles)
+        return titleView
+    }()
+
+    fileprivate lazy var pageContentView:PageContentView = {[weak self] in
+        let size = CGSize(width: kScreenWidth, height: kScreenHeight-kTitleViewH)
+        let origin = CGPoint(x: 0, y: kTitleViewH)
+        let pageContentView = PageContentView(frame: CGRect(origin: origin, size: size), childVcs: controllers, parentViewController: self)
+        pageContentView.backgroundColor = UIColor.white
+        return pageContentView
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = RandomColor()
         //初始化UI界面
         initSubviews()
-        //自定义导航栏
-        setNavgationBar()
-        
+
         // Do any additional setup after loading the view.
     }
 }
@@ -24,6 +40,12 @@ class QYHomeController: QYBaseViewController {
 extension QYHomeController{
     //创建UI
     private func initSubviews(){
+        //自定义导航栏
+        setNavgationBar()
+        //添加pageTitleView
+        view.addSubview(pageTitleView)
+        //添加pageContentView
+        view.addSubview(pageContentView)
         
     }
     //自定义导航栏

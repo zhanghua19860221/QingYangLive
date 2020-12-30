@@ -7,7 +7,7 @@
 
 import UIKit
 extension UIBarButtonItem{
-    /// 创建构造函数 convenience（便利构造函数修饰符）
+    /// 自定义构造函数 convenience（便利构造函数修饰符）
     /// - Parameters:
     ///   - imageName: 默认图片
     ///   - highImageName: 点击高亮图片

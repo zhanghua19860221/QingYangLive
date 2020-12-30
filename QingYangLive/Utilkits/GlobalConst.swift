@@ -7,22 +7,22 @@
 
 import UIKit
 /// 屏幕宽高比例缩放值
-let QYScreenWidth = UIScreen.main.bounds.width
-let QYScreenHeight = UIScreen.main.bounds.height
-let QYScreenZS = QYScreenWidth/375.0
+let kScreenWidth = UIScreen.main.bounds.width
+let kScreenHeight = UIScreen.main.bounds.height
+let kScreenZS = kScreenWidth/375.0
 
 /// 状态栏的高度
-let QYStatusBarHeight = UIApplication.shared.statusBarFrame.height
+let kStatusBarHeight = UIApplication.shared.statusBarFrame.height
 
 /// 导航栏的高度(加状态栏)
 public func kNavHeight() -> CGFloat {
-    return (currentViewController().navigationController?.navigationBar.frame.size.height ?? 44.0) + QYStatusBarHeight
+    return (currentViewController().navigationController?.navigationBar.frame.size.height ?? 44.0) + kStatusBarHeight
 }
 
 //判断是否是全面屏(返回true为全面屏)
-let isFullScreen = QYScreenWidth/QYScreenHeight > 1.9
+let isFullScreen = kScreenWidth/kScreenHeight > 1.9
 
-let QYTabBarHeight = (49 + safeAreaBottomSpace())
+let kTabBarHeight = (49 + safeAreaBottomSpace())
 
 //获取底部安全区域的高度间隙
 func safeAreaBottomSpace() -> CGFloat {
@@ -51,35 +51,16 @@ func RandomColor() -> UIColor {
     return RGBColor(CGFloat(arc4random_uniform(256)), CGFloat(arc4random_uniform(256)), CGFloat(arc4random_uniform(256)))
 }
 
-//全局主题色
-let MainColor = UIColor.white
 //全局背景色
 let BGColor = UIColor(red: 245/255.0, green: 245/255.0, blue: 245/255.0, alpha: 1)
-//全局按钮主背景色
-let btnMainColor = UIColor.init(hexadecimal: "FF7D00")
-//全局按钮辅背景色
-let btnAssistColor = UIColor.init(hexadecimal: "CAA064")
-//全局主题色
-let AppMainColor = UIColor.init(hexadecimal: "FF7D00")
-//全局主题色_红
-let AppMainColor_red = UIColor.init(hexadecimal: "F02717")
-//全局主题色_蓝
-let AppMainColor_blue = UIColor.init(hexadecimal: "3C90D2")
-//导航主题色_灰
-let NavColor_gray = UIColor.init(hexadecimal: "a9a9a9")
-//导航主题色_橙
-let NavColor_orange = UIColor.init(hexadecimal: "ff7d00")
-//导航主题色_黑
-let NavColor_black = UIColor.init(hexadecimal: "423a35")
-
 
 //平方-简-中黑体 和大小
 func FontPFMediumSize(_ fontSize:CGFloat) -> UIFont {
-    return UIFont.init(name: "PingFangSC-Medium", size: fontSize*QYScreenZS)!
+    return UIFont.init(name: "PingFangSC-Medium", size: fontSize*kScreenZS)!
 }
 //平方-简-标准字体 和大小
 func FontPFRegularSize(_ fontSize:CGFloat) -> UIFont {
-    return UIFont.init(name: "PingFangSC-Regular", size: fontSize*QYScreenZS)!
+    return UIFont.init(name: "PingFangSC-Regular", size: fontSize*kScreenZS)!
 }
 
 func QYLog<T>(_ message : T, file : String = #file, lineNumber : Int = #line) {

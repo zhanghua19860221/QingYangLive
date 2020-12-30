@@ -28,4 +28,52 @@ extension UIColor{
         Scanner.init(string: bStr).scanHexInt32(&b);
         self.init(red: CGFloat(r)/255.0, green: CGFloat(g)/255.0, blue: CGFloat(b)/255.0, alpha: 1);
     }
+    //全局主题色
+    public class func MainColor() -> UIColor{
+        return UIColor.white
+    }
+    //全局按钮主背景色
+    public class func btnMainColor() -> UIColor{
+        return UIColor.init(hexadecimal: "FF7D00")
+    }
+    //全局按钮辅背景色
+    public class func btnAssistColor() -> UIColor{
+        return UIColor.init(hexadecimal: "CAA064")
+    }
+    //全局主题色
+    public class func AppMainColor() -> UIColor{
+        return UIColor.init(hexadecimal: "FF7D00")
+    }
+    //全局主题色_红
+    public class func AppMainColor_red() -> UIColor{
+        return UIColor.init(hexadecimal: "F02717")
+    }
+    //全局主题色_蓝
+    public class func AppMainColor_blue() -> UIColor{
+        return UIColor.init(hexadecimal: "3C90D2")
+    }
+    //全局主题色_灰
+    public class func NavColor_gray() -> UIColor{
+        return UIColor.init(hexadecimal: "a9a9a9")
+    }
+    //导航主题色_橙
+    public class func NavColor_orange() -> UIColor{
+        return UIColor.init(hexadecimal: "ff7d00")
+    }
+    //导航主题色_黑
+    public class func NavColor_black() -> UIColor{
+        return UIColor.init(hexadecimal: "423a35")
+    }
+    //全局字体默认色
+    public class func MainTitleColor() -> UIColor{
+        return UIColor.init(hexadecimal: "212121")
+    }
+    //全局字体默认色
+    public class func MainSelectedTitleColor() -> UIColor{
+        return UIColor.init(hexadecimal: "ff7d00")
+    }
+    //全局字体辅助色
+    public class func MainPlaceholderColor() -> UIColor{
+        return UIColor.init(hexadecimal: "757575")
+    }
 }
