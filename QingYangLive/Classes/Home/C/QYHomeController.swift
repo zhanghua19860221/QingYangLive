@@ -13,10 +13,11 @@ class QYHomeController: QYBaseViewController {
         return[QYRecommendationController(),QYGameController(),QYEntertainmentController(),QYFunController()]
     }()
 
-    fileprivate lazy var pageTitleView:PageTitleView = {
+    fileprivate lazy var pageTitleView:PageTitleView = {[weak self] in
         let titles = ["推荐","游戏","娱乐","趣玩"]
         let titleFrame = CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: kScreenWidth, height: kTitleViewH))
         let titleView = PageTitleView(frame: titleFrame, titles: titles)
+        titleView.delegate = self
         return titleView
     }()
 
@@ -25,6 +26,7 @@ class QYHomeController: QYBaseViewController {
         let origin = CGPoint(x: 0, y: kTitleViewH)
         let pageContentView = PageContentView(frame: CGRect(origin: origin, size: size), childVcs: controllers, parentViewController: self)
         pageContentView.backgroundColor = UIColor.white
+        pageContentView.delegate = self
         return pageContentView
     }()
     override func viewDidLoad() {
@@ -65,5 +67,20 @@ extension QYHomeController{
 //        let scanItem  = UIBarButtonItem.createItem(imageName: "nav_scan_grey", highImageName: "nav_scan_colour", size: itemSize)
 
         navigationItem.rightBarButtonItems = [historyItem,searchItem,scanItem]
+    }
+}
+
+//MARK: - 遵守协议 PageTitleViewDelegate
+extension QYHomeController:PageTitleViewDelegate{
+    func pageTitleView(_ titleView: PageTitleView, selectedIndex index: Int) {
+        pageContentView.setCurrentPageIndex(currentIndex: index)
+        
+    }
+}
+
+//MARK: - 遵守协议 PageContentViewDelegate
+extension QYHomeController:PageContentViewDelegate{
+    func pageContentView(_ contentView: PageContentView, progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
+        pageTitleView.setCurrentPageIndex(progress, sourceIndex: sourceIndex, targetIndex:targetIndex)
     }
 }
