@@ -146,20 +146,20 @@ extension PageTitleView{
     /// - Parameters:
     ///   - progress: 偏移比例
     ///   - sourceIndex: 滑动前index
-    ///   - tagetIndex: 滑动后index
+    ///   - targetIndex: 滑动后index
     func setCurrentPageIndex(_ progress : CGFloat, sourceIndex : Int, targetIndex : Int){
         // 1.取出sourceLabel/targetLabel
-        let tagetLabel = labels[targetIndex]
+        let targetLabel = labels[targetIndex]
         let sourceLabel = labels[sourceIndex]
 
         //2. 更改slideFrame
-        let moveTotalX = tagetLabel.frame.origin.x - sourceLabel.frame.origin.x
+        let moveTotalX = targetLabel.frame.origin.x - sourceLabel.frame.origin.x
         let moveX = moveTotalX * progress
         self.slideLine.frame.origin.x = sourceLabel.frame.origin.x + moveX
         
         //3. 新旧label颜色设置顺序不能 颠倒
-        sourceLabel.textColor = UIColor.MainTitleColor()
-        tagetLabel.textColor = UIColor.NavColor_orange()
+        sourceLabel.textColor = UIColor.MainTitleColor ()
+        targetLabel.textColor = UIColor.NavColor_orange()
         
         // 4.记录最新的index
         currentIndex = targetIndex

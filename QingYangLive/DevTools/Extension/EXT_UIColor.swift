@@ -6,7 +6,7 @@
 //
 import UIKit
 extension UIColor{
-    
+    //16进制 赋值
     public convenience init(hexadecimal:String) {
         let cstr = hexadecimal.trimmingCharacters(in:  CharacterSet.whitespacesAndNewlines).uppercased() as NSString;
         var range = NSRange.init()
