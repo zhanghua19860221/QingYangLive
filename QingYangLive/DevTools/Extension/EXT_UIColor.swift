@@ -42,7 +42,7 @@ extension UIColor{
     }
     //全局主题色
     public class func AppMainColor() -> UIColor{
-        return UIColor.init(hexadecimal: "FF7D00")
+        return UIColor.init(hexadecimal: "f4f5f6")
     }
     //全局主题色_红
     public class func AppMainColor_red() -> UIColor{

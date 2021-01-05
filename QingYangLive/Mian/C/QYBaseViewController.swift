@@ -11,7 +11,7 @@ class QYBaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = UIColor.AppMainColor()
         // Do any additional setup after loading the view.
     }
     

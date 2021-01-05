@@ -25,7 +25,6 @@ class QYHomeController: QYBaseViewController {
         let size = CGSize(width: kScreenWidth, height: kScreenHeight-kTitleViewH)
         let origin = CGPoint(x: 0, y: kTitleViewH)
         let pageContentView = PageContentView(frame: CGRect(origin: origin, size: size), childVcs: controllers, parentViewController: self)
-        pageContentView.backgroundColor = UIColor.white
         pageContentView.delegate = self
         return pageContentView
     }()
