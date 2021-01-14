@@ -36,6 +36,7 @@ class QYHomeController: QYBaseViewController {
 
         // Do any additional setup after loading the view.
     }
+
 }
 //MARK: - 初始化UI界面
 extension QYHomeController{

@@ -55,7 +55,6 @@ class PageContentView: UIView {
         self.parentViewController = parentViewController
         
         super.init(frame: frame)
-        
         //设置UI
         initSubviews()
     }

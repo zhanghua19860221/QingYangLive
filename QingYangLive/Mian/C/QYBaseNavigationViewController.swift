@@ -20,6 +20,12 @@ class QYBaseNavigationViewController: UINavigationController {
         navigationBar.barTintColor = UIColor.white
         //仅用这句话去掉导航栏下面的线,在10系统以上管用,10线依然存在,解决办法找UI要图,再设个背景图就好了
         navigationBar.shadowImage = UIImage()
+        //compact让导航及时更新样式 让导航彻底透明
+        //navigationBar.setBackgroundImage(UIImage(named: ""), for: UIBarMetrics.compact)
+        //不让透明图片影响状态栏
+        //self.navigationController?.navigationBar.layer.masksToBounds = true
+        //设置导航栏头视图
+        //navigationItem.titleView = UIImageView(image: UIImage(named: ""))
         
         interactivePopGestureRecognizer?.delegate=self
     }
@@ -27,7 +33,7 @@ class QYBaseNavigationViewController: UINavigationController {
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         
         if children.count > 0{
-            viewController.hidesBottomBarWhenPushed=true
+            viewController.hidesBottomBarWhenPushed = true
             viewController.navigationItem.leftBarButtonItem=UIBarButtonItem(image: UIImage(named: "nav_left_bk"), style: UIBarButtonItem.Style.plain, target: self, action: #selector(leftBtnDidClick))
             
         }

@@ -18,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = tabbarVC
         window?.makeKeyAndVisible()
         
+        //设置状态栏字体颜色
+        //1. infoPlist 文件添加 key View controller-based status bar appearance 为 NO
+        //application.statusBarStyle = .lightContent; //（设置为白色）
         return true
     }
 

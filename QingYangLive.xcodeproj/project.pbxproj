@@ -3,14 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1453060125AC17FA005C1377 /* EXT_Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1453060025AC17FA005C1377 /* EXT_Date.swift */; };
+		1453061425AC1CD9005C1377 /* QYBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1453061325AC1CD9005C1377 /* QYBaseViewModel.swift */; };
+		1453061C25AC1D6B005C1377 /* QYRecommendationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1453061B25AC1D6B005C1377 /* QYRecommendationViewModel.swift */; };
+		1453062F25AC7048005C1377 /* QYBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1453062E25AC7048005C1377 /* QYBaseModel.swift */; };
+		1453063725AC70EE005C1377 /* QYRecommendationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1453063625AC70EE005C1377 /* QYRecommendationModel.swift */; };
 		145370B625A3E739007DDA57 /* QYRecommendHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145370B425A3E739007DDA57 /* QYRecommendHeaderView.swift */; };
 		145370B725A3E739007DDA57 /* QYRecommendHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 145370B525A3E739007DDA57 /* QYRecommendHeaderView.xib */; };
 		145370BD25A3ED01007DDA57 /* QYCollectionNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145370BB25A3ED01007DDA57 /* QYCollectionNormalCell.swift */; };
 		145370BE25A3ED01007DDA57 /* QYCollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 145370BC25A3ED01007DDA57 /* QYCollectionNormalCell.xib */; };
+		145370D525A49777007DDA57 /* QYCollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145370D325A49777007DDA57 /* QYCollectionPrettyCell.swift */; };
+		145370D625A49777007DDA57 /* QYCollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 145370D425A49777007DDA57 /* QYCollectionPrettyCell.xib */; };
+		1453CAE225A72A480036C7DC /* GlobalClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1453CAE125A72A480036C7DC /* GlobalClass.swift */; };
+		1453CAE825A72DC20036C7DC /* QYNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1453CAE725A72DC20036C7DC /* QYNetwork.swift */; };
 		1459D478259AD35400E4FDC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459D477259AD35400E4FDC0 /* AppDelegate.swift */; };
 		1459D481259AD35600E4FDC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1459D480259AD35600E4FDC0 /* Assets.xcassets */; };
 		1459D48F259AD35700E4FDC0 /* QingYangLiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459D48E259AD35700E4FDC0 /* QingYangLiveTests.swift */; };
@@ -56,10 +65,19 @@
 
 /* Begin PBXFileReference section */
 		0EF5F0616FFB7A6F59F4EA19 /* Pods-QingYangLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QingYangLive.debug.xcconfig"; path = "Target Support Files/Pods-QingYangLive/Pods-QingYangLive.debug.xcconfig"; sourceTree = "<group>"; };
+		1453060025AC17FA005C1377 /* EXT_Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXT_Date.swift; sourceTree = "<group>"; };
+		1453061325AC1CD9005C1377 /* QYBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYBaseViewModel.swift; sourceTree = "<group>"; };
+		1453061B25AC1D6B005C1377 /* QYRecommendationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYRecommendationViewModel.swift; sourceTree = "<group>"; };
+		1453062E25AC7048005C1377 /* QYBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYBaseModel.swift; sourceTree = "<group>"; };
+		1453063625AC70EE005C1377 /* QYRecommendationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYRecommendationModel.swift; sourceTree = "<group>"; };
 		145370B425A3E739007DDA57 /* QYRecommendHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYRecommendHeaderView.swift; sourceTree = "<group>"; };
 		145370B525A3E739007DDA57 /* QYRecommendHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QYRecommendHeaderView.xib; sourceTree = "<group>"; };
 		145370BB25A3ED01007DDA57 /* QYCollectionNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYCollectionNormalCell.swift; sourceTree = "<group>"; };
 		145370BC25A3ED01007DDA57 /* QYCollectionNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QYCollectionNormalCell.xib; sourceTree = "<group>"; };
+		145370D325A49777007DDA57 /* QYCollectionPrettyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYCollectionPrettyCell.swift; sourceTree = "<group>"; };
+		145370D425A49777007DDA57 /* QYCollectionPrettyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QYCollectionPrettyCell.xib; sourceTree = "<group>"; };
+		1453CAE125A72A480036C7DC /* GlobalClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalClass.swift; sourceTree = "<group>"; };
+		1453CAE725A72DC20036C7DC /* QYNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYNetwork.swift; sourceTree = "<group>"; };
 		1459D474259AD35400E4FDC0 /* QingYangLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QingYangLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1459D477259AD35400E4FDC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1459D480259AD35600E4FDC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -119,6 +137,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1453061225AC1CC1005C1377 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				1453061325AC1CD9005C1377 /* QYBaseViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		1453CAE625A72D840036C7DC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1453CAE725A72DC20036C7DC /* QYNetwork.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		1459D46B259AD35400E4FDC0 = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +221,7 @@
 				1459D540259B1E4600E4FDC0 /* UrlConst.swift */,
 				1459D53B259B1E2500E4FDC0 /* KeyConst.swift */,
 				1459D52E259B18EA00E4FDC0 /* GlobalConst.swift */,
+				1453CAE125A72A480036C7DC /* GlobalClass.swift */,
 			);
 			path = Utilkits;
 			sourceTree = "<group>";
@@ -194,6 +229,7 @@
 		1459D4B2259AD42900E4FDC0 /* Mian */ = {
 			isa = PBXGroup;
 			children = (
+				1453061225AC1CC1005C1377 /* VM */,
 				1459D4CD259AE08600E4FDC0 /* C */,
 				1459D4CC259AE08300E4FDC0 /* M */,
 				1459D4CB259AE08100E4FDC0 /* V */,
@@ -226,6 +262,8 @@
 			children = (
 				145370BB25A3ED01007DDA57 /* QYCollectionNormalCell.swift */,
 				145370BC25A3ED01007DDA57 /* QYCollectionNormalCell.xib */,
+				145370D325A49777007DDA57 /* QYCollectionPrettyCell.swift */,
+				145370D425A49777007DDA57 /* QYCollectionPrettyCell.xib */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -233,6 +271,7 @@
 		1459D4CC259AE08300E4FDC0 /* M */ = {
 			isa = PBXGroup;
 			children = (
+				1453062E25AC7048005C1377 /* QYBaseModel.swift */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -294,6 +333,7 @@
 		1459D4DB259B074800E4FDC0 /* DevTools */ = {
 			isa = PBXGroup;
 			children = (
+				1453CAE625A72D840036C7DC /* Network */,
 				1459D4DD259B077F00E4FDC0 /* Extension */,
 				1459D4DC259B077A00E4FDC0 /* Custom */,
 			);
@@ -315,6 +355,7 @@
 				1459D536259B1C8900E4FDC0 /* EXT_UIColor.swift */,
 				145C9DF0259C10F1003230C7 /* EXT_NSString.swift */,
 				1459D553259B491B00E4FDC0 /* EXT_UIBarButtonItem.swift */,
+				1453060025AC17FA005C1377 /* EXT_Date.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -322,6 +363,7 @@
 		1459D4F1259B0C1E00E4FDC0 /* VM */ = {
 			isa = PBXGroup;
 			children = (
+				1453061B25AC1D6B005C1377 /* QYRecommendationViewModel.swift */,
 			);
 			path = VM;
 			sourceTree = "<group>";
@@ -357,6 +399,7 @@
 		1459D4F5259B0C3300E4FDC0 /* M */ = {
 			isa = PBXGroup;
 			children = (
+				1453063625AC70EE005C1377 /* QYRecommendationModel.swift */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -492,6 +535,7 @@
 				1459D470259AD35400E4FDC0 /* Sources */,
 				1459D471259AD35400E4FDC0 /* Frameworks */,
 				1459D472259AD35400E4FDC0 /* Resources */,
+				4E4EEA00A89CFADB4E91F959 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -587,6 +631,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				145370B725A3E739007DDA57 /* QYRecommendHeaderView.xib in Resources */,
+				145370D625A49777007DDA57 /* QYCollectionPrettyCell.xib in Resources */,
 				145370BE25A3ED01007DDA57 /* QYCollectionNormalCell.xib in Resources */,
 				1459D481259AD35600E4FDC0 /* Assets.xcassets in Resources */,
 			);
@@ -631,6 +676,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4E4EEA00A89CFADB4E91F959 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QingYangLive/Pods-QingYangLive-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QingYangLive/Pods-QingYangLive-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QingYangLive/Pods-QingYangLive-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -642,21 +704,29 @@
 				1459D537259B1C8900E4FDC0 /* EXT_UIColor.swift in Sources */,
 				145C9E01259C55FA003230C7 /* QYRecommendationController.swift in Sources */,
 				1459D50A259B0D1E00E4FDC0 /* QYHomeController.swift in Sources */,
+				1453063725AC70EE005C1377 /* QYRecommendationModel.swift in Sources */,
 				145C9DFB259C4E65003230C7 /* PageContentView.swift in Sources */,
+				1453061425AC1CD9005C1377 /* QYBaseViewModel.swift in Sources */,
+				1453060125AC17FA005C1377 /* EXT_Date.swift in Sources */,
+				1453062F25AC7048005C1377 /* QYBaseModel.swift in Sources */,
 				145C9E0B259C5653003230C7 /* QYEntertainmentController.swift in Sources */,
+				1453061C25AC1D6B005C1377 /* QYRecommendationViewModel.swift in Sources */,
 				145370BD25A3ED01007DDA57 /* QYCollectionNormalCell.swift in Sources */,
 				1459D4EA259B0A0100E4FDC0 /* QYBaseTabBarController.swift in Sources */,
 				145C9DF1259C10F1003230C7 /* EXT_NSString.swift in Sources */,
 				1459D554259B491B00E4FDC0 /* EXT_UIBarButtonItem.swift in Sources */,
 				1459D502259B0CDF00E4FDC0 /* QYBaseViewController.swift in Sources */,
+				1453CAE225A72A480036C7DC /* GlobalClass.swift in Sources */,
 				1459D478259AD35400E4FDC0 /* AppDelegate.swift in Sources */,
 				145C9E10259C5682003230C7 /* QYFunController.swift in Sources */,
 				1459D53C259B1E2500E4FDC0 /* KeyConst.swift in Sources */,
 				1459D560259B5B9800E4FDC0 /* PageTitleView.swift in Sources */,
 				145370B625A3E739007DDA57 /* QYRecommendHeaderView.swift in Sources */,
+				145370D525A49777007DDA57 /* QYCollectionPrettyCell.swift in Sources */,
 				1459D4E5259B09C800E4FDC0 /* QYBaseNavigationViewController.swift in Sources */,
 				1459D50F259B0D3200E4FDC0 /* QYLiveController.swift in Sources */,
 				1459D514259B0D4300E4FDC0 /* QYFollowController.swift in Sources */,
+				1453CAE825A72DC20036C7DC /* QYNetwork.swift in Sources */,
 				145C9E06259C562C003230C7 /* QYGameController.swift in Sources */,
 				1459D519259B0D5600E4FDC0 /* QYPersonalController.swift in Sources */,
 				1459D541259B1E4600E4FDC0 /* UrlConst.swift in Sources */,
@@ -821,6 +891,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 25LGZ235YJ;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = QingYangLive/Resourse/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -845,6 +917,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 25LGZ235YJ;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = QingYangLive/Resourse/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (

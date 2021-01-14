@@ -6,6 +6,8 @@
 //
 
 import UIKit
+//MARK: - 常用常量及方法
+
 /// 屏幕宽高比例缩放值
 let kScreenWidth = UIScreen.main.bounds.width
 let kScreenHeight = UIScreen.main.bounds.height

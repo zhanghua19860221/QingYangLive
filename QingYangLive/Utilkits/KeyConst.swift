@@ -6,3 +6,4 @@
 //
 
 import Foundation
+//MARK: - 常用通知

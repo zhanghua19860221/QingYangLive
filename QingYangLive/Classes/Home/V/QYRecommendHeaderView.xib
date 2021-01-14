@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR">
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="QYRecommendHeaderView" customModule="QingYangLive" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="309" height="45"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
@@ -34,6 +34,9 @@
                     <rect key="frame" x="252" y="10" width="42" height="35"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <state key="normal" title="更多 &gt;"/>
+                    <connections>
+                        <action selector="moreClick:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="G8P-JX-gHj"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
@@ -52,6 +55,11 @@
                 <constraint firstItem="gX5-lR-r63" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="cG7-LJ-us3"/>
                 <constraint firstItem="Jcj-Gl-cvO" firstAttribute="top" secondItem="gX5-lR-r63" secondAttribute="bottom" id="vrP-4t-dZd"/>
             </constraints>
+            <connections>
+                <outlet property="iconImageView" destination="yk3-jI-usf" id="evD-el-ig6"/>
+                <outlet property="moreButton" destination="0x0-Kp-H6a" id="UFC-RG-51C"/>
+                <outlet property="titleLabel" destination="Jcj-Gl-cvO" id="eoQ-Gf-DvX"/>
+            </connections>
             <point key="canvasLocation" x="-396.37681159420293" y="-29.799107142857142"/>
         </collectionReusableView>
     </objects>
