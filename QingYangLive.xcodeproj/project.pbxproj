@@ -107,6 +107,7 @@
 		145C9E05259C562C003230C7 /* QYGameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYGameController.swift; sourceTree = "<group>"; };
 		145C9E0A259C5653003230C7 /* QYEntertainmentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYEntertainmentController.swift; sourceTree = "<group>"; };
 		145C9E0F259C5682003230C7 /* QYFunController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYFunController.swift; sourceTree = "<group>"; };
+		145D403525B041270089A835 /* Pch_Bariding_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pch_Bariding_Header.h; sourceTree = "<group>"; };
 		417F89D96CA320D1A25900CD /* Pods-QingYangLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QingYangLive.release.xcconfig"; path = "Target Support Files/Pods-QingYangLive/Pods-QingYangLive.release.xcconfig"; sourceTree = "<group>"; };
 		F1B2CD08BD101B9F7C884C66 /* libPods-QingYangLive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QingYangLive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -222,6 +223,7 @@
 				1459D53B259B1E2500E4FDC0 /* KeyConst.swift */,
 				1459D52E259B18EA00E4FDC0 /* GlobalConst.swift */,
 				1453CAE125A72A480036C7DC /* GlobalClass.swift */,
+				145D403525B041270089A835 /* Pch_Bariding_Header.h */,
 			);
 			path = Utilkits;
 			sourceTree = "<group>";
@@ -902,6 +904,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tiens.Pocket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = tiensPocketDev;
+				SWIFT_OBJC_BRIDGING_HEADER = QingYangLive/Utilkits/Pch_Bariding_Header.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -928,6 +931,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tiens.Pocket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = tiensPocketDev;
+				SWIFT_OBJC_BRIDGING_HEADER = QingYangLive/Utilkits/Pch_Bariding_Header.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
