@@ -38,13 +38,8 @@ class QYNetwork{
         }
 
         // 2.发送网络请求
-        Alamofire.request(URLString, method: method, parameters: parameters).responseJSON { (response) in
+        Alamofire.request(URLString, method: method, parameters: nil).responseJSON { (response) in
             // 3.获取结果
-            
-            guard let result = response.result.value else {
-                print("错误数据 ->\(response.result.error!)")
-                return
-            }
             let Header = response.response!.allHeaderFields
             print("请求头 ->\(Header)")
             
@@ -54,13 +49,29 @@ class QYNetwork{
             let code = response.response!.statusCode
             print("请求类型 ->\(type) 状态码 ->\(code)")
             
-            print("请求返回数据 ->\(result)")
-            //let data = try? JSONSerialization.data(withJSONObject: result, options: [])
-            //let jsonStr = String(data: data!, encoding: String.Encoding.utf8)
-            //print("请求返回数据 ->\(jsonStr)")
+            guard let result = (response.result.value as? [String : Any]) else {
+                print("错误数据 ->\(response.result.error!)")
+                return
+            }
+            let jsonStr = toJSONString(dict: result as NSDictionary)
+
+            print("请求返回数据 ->\(jsonStr)")
 
             // 4.将结果回调出去
             finishedCallback(result)
         }
     }
+  
+}
+
+// 转换json 数据
+
+func toJSONString(dict:NSDictionary?)->String{
+
+    let data = try? JSONSerialization.data(withJSONObject: dict!, options: JSONSerialization.WritingOptions.prettyPrinted)
+    
+    let strJson = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
+    
+    return strJson! as String
+
 }

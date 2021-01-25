@@ -38,6 +38,8 @@ class QYRecommendationController: QYBaseViewController {
         collectionView.backgroundColor = UIColor.AppMainColor()
         collectionView.delegate = self
         collectionView.dataSource = self
+        collectionView.emptyDataSetSource = self
+        collectionView.emptyDataSetDelegate = self
         collectionView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         //collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: kNormalCell)
         //collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: kYanZhiCell)
@@ -81,7 +83,7 @@ extension QYRecommendationController{
 
 
 //MARK: - 代理 UICollectionViewDataSource
-extension QYRecommendationController :UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
+extension QYRecommendationController :DZNEmptyDataSetSource,DZNEmptyDataSetDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         
         return recommendVM.dataArray.count
@@ -133,6 +135,7 @@ extension QYRecommendationController :UICollectionViewDataSource,UICollectionVie
         }
         return CGSize.zero
     }
+    
 }
 //MARK: - 代理 UICollectionViewDelegate
 extension QYRecommendationController :UICollectionViewDelegate{

@@ -7,6 +7,7 @@
 
 #ifndef Pch_Bariding_Header_h
 #define Pch_Bariding_Header_h
+#import <DZNEmptyDataSet/UIScrollView+EmptyDataSet.h>
 
 
 #endif /* Pch_Bariding_Header_h */

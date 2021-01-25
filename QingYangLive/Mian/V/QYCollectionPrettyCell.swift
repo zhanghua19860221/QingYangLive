@@ -12,7 +12,6 @@ class QYCollectionPrettyCell: UICollectionViewCell {
     @IBOutlet weak var name_L: UILabel!
     @IBOutlet weak var address_L: UILabel!
     @IBOutlet weak var icon_imageV: UIImageView!
-    
     var model : QYRecommendationModel?{
         didSet{
             name_L.text = model?.nickname;

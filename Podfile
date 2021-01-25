@@ -16,6 +16,11 @@ pod 'Kingfisher'
 
 pod 'MJRefresh'
 pod 'SDCycleScrollView'
+pod 'Moya'
+pod 'DZNEmptyDataSet'
+
+#数据库
+pod 'QueryKit'
 
 
 end

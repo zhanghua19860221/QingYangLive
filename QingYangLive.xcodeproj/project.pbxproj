@@ -43,6 +43,8 @@
 		145C9E06259C562C003230C7 /* QYGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145C9E05259C562C003230C7 /* QYGameController.swift */; };
 		145C9E0B259C5653003230C7 /* QYEntertainmentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145C9E0A259C5653003230C7 /* QYEntertainmentController.swift */; };
 		145C9E10259C5682003230C7 /* QYFunController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145C9E0F259C5682003230C7 /* QYFunController.swift */; };
+		145D404625B068220089A835 /* QYHomeGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D404525B068220089A835 /* QYHomeGameViewModel.swift */; };
+		145D404B25B068520089A835 /* QYHomeGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D404A25B068520089A835 /* QYHomeGameModel.swift */; };
 		62FCCEB7B5C689AE676FAB20 /* libPods-QingYangLive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B2CD08BD101B9F7C884C66 /* libPods-QingYangLive.a */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +110,8 @@
 		145C9E0A259C5653003230C7 /* QYEntertainmentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYEntertainmentController.swift; sourceTree = "<group>"; };
 		145C9E0F259C5682003230C7 /* QYFunController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYFunController.swift; sourceTree = "<group>"; };
 		145D403525B041270089A835 /* Pch_Bariding_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pch_Bariding_Header.h; sourceTree = "<group>"; };
+		145D404525B068220089A835 /* QYHomeGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYHomeGameViewModel.swift; sourceTree = "<group>"; };
+		145D404A25B068520089A835 /* QYHomeGameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYHomeGameModel.swift; sourceTree = "<group>"; };
 		417F89D96CA320D1A25900CD /* Pods-QingYangLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QingYangLive.release.xcconfig"; path = "Target Support Files/Pods-QingYangLive/Pods-QingYangLive.release.xcconfig"; sourceTree = "<group>"; };
 		F1B2CD08BD101B9F7C884C66 /* libPods-QingYangLive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QingYangLive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -366,6 +370,7 @@
 			isa = PBXGroup;
 			children = (
 				1453061B25AC1D6B005C1377 /* QYRecommendationViewModel.swift */,
+				145D404525B068220089A835 /* QYHomeGameViewModel.swift */,
 			);
 			path = VM;
 			sourceTree = "<group>";
@@ -402,6 +407,7 @@
 			isa = PBXGroup;
 			children = (
 				1453063625AC70EE005C1377 /* QYRecommendationModel.swift */,
+				145D404A25B068520089A835 /* QYHomeGameModel.swift */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -716,9 +722,11 @@
 				145370BD25A3ED01007DDA57 /* QYCollectionNormalCell.swift in Sources */,
 				1459D4EA259B0A0100E4FDC0 /* QYBaseTabBarController.swift in Sources */,
 				145C9DF1259C10F1003230C7 /* EXT_NSString.swift in Sources */,
+				145D404B25B068520089A835 /* QYHomeGameModel.swift in Sources */,
 				1459D554259B491B00E4FDC0 /* EXT_UIBarButtonItem.swift in Sources */,
 				1459D502259B0CDF00E4FDC0 /* QYBaseViewController.swift in Sources */,
 				1453CAE225A72A480036C7DC /* GlobalClass.swift in Sources */,
+				145D404625B068220089A835 /* QYHomeGameViewModel.swift in Sources */,
 				1459D478259AD35400E4FDC0 /* AppDelegate.swift in Sources */,
 				145C9E10259C5682003230C7 /* QYFunController.swift in Sources */,
 				1459D53C259B1E2500E4FDC0 /* KeyConst.swift in Sources */,
